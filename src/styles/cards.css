@@ -1,0 +1,262 @@
+/* ============================================================
+   Shared service-standard card — Home, About, Why Us
+   Premium animation layer: shimmer + glow + spring icon
+   ============================================================ */
+
+.standard-card {
+  position: relative;
+  isolation: isolate;
+  height: 100%;
+  min-height: 258px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 22px;
+  overflow: hidden;
+  padding: 25px 26px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 23px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.025)),
+    rgba(255, 255, 255, 0.018);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  transition:
+    transform 0.45s var(--ease),
+    border-color 0.45s ease,
+    background 0.45s ease,
+    box-shadow 0.45s var(--ease);
+}
+
+/* Ambient glow orb — top-right */
+.standard-card::before {
+  position: absolute;
+  z-index: -1;
+  top: -72px;
+  right: -58px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(93, 186, 247, 0.18), transparent 68%);
+  content: '';
+  pointer-events: none;
+  transition: transform 0.6s var(--ease), opacity 0.5s ease;
+}
+
+/* Shimmer sweep — slides diagonally on hover */
+.standard-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.12) 50%,
+    transparent 75%
+  );
+  transform: translateX(-130%);
+  content: '';
+  pointer-events: none;
+  transition: transform 0.7s var(--ease);
+  border-radius: inherit;
+}
+
+.standard-card:hover {
+  transform: translateY(-7px) scale(1.015);
+  border-color: rgba(93, 186, 247, 0.3);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.045)),
+    rgba(255, 255, 255, 0.026);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(93, 186, 247, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.standard-card:hover::before {
+  transform: scale(1.25) translate(-6px, 8px);
+  opacity: 1;
+}
+
+.standard-card:hover::after {
+  transform: translateX(130%);
+}
+
+/* Icon — spring bounce + glow on hover */
+.standard-card__top,
+.standard-card__proof {
+  display: flex;
+  align-items: center;
+}
+
+.standard-card__top {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.standard-card__number {
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 0.67rem;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+  transition: color 0.3s ease, letter-spacing 0.4s var(--ease);
+}
+
+.standard-card:hover .standard-card__number {
+  color: rgba(93, 186, 247, 0.75);
+  letter-spacing: 0.22em;
+}
+
+.standard-card__icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid rgba(135, 206, 249, 0.18);
+  border-radius: 13px;
+  background: rgba(93, 186, 247, 0.08);
+  color: #8ed1fa;
+  transition:
+    transform 0.5s var(--ease),
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.standard-card:hover .standard-card__icon {
+  transform: rotate(-8deg) scale(1.15);
+  background: rgba(93, 186, 247, 0.18);
+  border-color: rgba(135, 206, 249, 0.38);
+  box-shadow: 0 0 18px rgba(93, 186, 247, 0.3);
+}
+
+.standard-card__content {
+  align-self: end;
+}
+
+.standard-card h2,
+.standard-card h3 {
+  max-width: 330px;
+  margin-bottom: 9px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.42rem;
+  font-weight: 720;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+  transition: letter-spacing 0.4s var(--ease);
+}
+
+.standard-card:hover h2,
+.standard-card:hover h3 {
+  letter-spacing: -0.04em;
+}
+
+.standard-card p {
+  max-width: 380px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.standard-card__proof {
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.7rem;
+  font-weight: 760;
+  line-height: 1.35;
+  transition: color 0.3s ease;
+}
+
+.standard-card:hover .standard-card__proof {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.standard-card__proof svg {
+  flex: 0 0 auto;
+  color: #82cdf8;
+  transition: transform 0.4s var(--ease);
+}
+
+.standard-card:hover .standard-card__proof svg {
+  transform: scale(1.25) rotate(10deg);
+}
+
+/* ── Light variant ─────────────────────────────────────────── */
+.standard-card--light {
+  border-color: rgba(8, 28, 43, 0.1);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(249, 248, 244, 0.92)),
+    #fff;
+  box-shadow:
+    0 14px 38px rgba(5, 21, 33, 0.045),
+    inset 0 1px 0 #fff;
+}
+
+.standard-card--light::before {
+  background: radial-gradient(circle, rgba(241, 93, 42, 0.12), transparent 68%);
+}
+
+.standard-card--light::after {
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 75%
+  );
+}
+
+.standard-card--light:hover {
+  border-color: rgba(241, 93, 42, 0.2);
+  background:
+    linear-gradient(145deg, #fff, rgba(249, 248, 244, 0.98)),
+    #fff;
+  box-shadow:
+    0 28px 65px rgba(5, 21, 33, 0.1),
+    0 0 0 1px rgba(241, 93, 42, 0.1);
+}
+
+.standard-card--light .standard-card__number {
+  color: var(--accent-strong);
+}
+
+.standard-card--light:hover .standard-card__number {
+  color: var(--accent);
+  letter-spacing: 0.22em;
+}
+
+.standard-card--light .standard-card__icon {
+  border-color: rgba(241, 93, 42, 0.12);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.standard-card--light:hover .standard-card__icon {
+  background: rgba(241, 93, 42, 0.12);
+  border-color: rgba(241, 93, 42, 0.28);
+  box-shadow: 0 0 18px rgba(241, 93, 42, 0.22);
+}
+
+.standard-card--light h2,
+.standard-card--light h3 {
+  color: var(--ink-950);
+}
+
+.standard-card--light p {
+  color: var(--ink-600);
+}
+
+.standard-card--light .standard-card__proof {
+  border-top-color: var(--line);
+  color: var(--ink-600);
+}
+
+.standard-card--light:hover .standard-card__proof {
+  color: var(--ink-800);
+}
+
+.standard-card--light .standard-card__proof svg {
+  color: var(--accent);
+}
