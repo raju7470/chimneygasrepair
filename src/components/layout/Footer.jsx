@@ -11,7 +11,7 @@ export function Footer() {
         <div className="footer__brand">
           <Logo inverse />
           <p>
-            Thoughtful doorstep service for gas stoves, hobs, cooktops, burners and cooking ranges.
+            Doorstep chimney repair, kitchen chimney cleaning and gas appliance service in MP Nagar, Bhopal.
           </p>
           <a className="footer__phone" href={`tel:${siteConfig.phoneHref}`}>
             <Icon name="phone" size={18} /> {siteConfig.phoneDisplay}
@@ -29,10 +29,10 @@ export function Footer() {
 
         <div>
           <h3>Service</h3>
-          <Link to="/services">Gas stove repair</Link>
-          <Link to="/services">Built-in hob service</Link>
-          <Link to="/services">Burner & ignition</Link>
-          <Link to="/services">Commercial support</Link>
+          <Link to="/services">Chimney repair Bhopal</Link>
+          <Link to="/services">Kitchen chimney cleaning</Link>
+          <Link to="/services">Gas stove repair Bhopal</Link>
+          <Link to="/services">Gas appliance repair</Link>
         </div>
 
         <div>

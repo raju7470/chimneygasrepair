@@ -7,16 +7,17 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 export default function ContactPage() {
   useDocumentMeta({
-    title: 'Contact',
-    description: 'Book a doorstep gas appliance service visit by phone, WhatsApp or the contact form.',
+    title: 'Contact & Book Chimney or Gas Repair in Bhopal',
+    description:
+      'Book a doorstep chimney repair or gas stove repair in Bhopal. Call or WhatsApp for chimney and gas appliance service in MP Nagar.',
   });
 
   return (
     <>
       <PageHero
         eyebrow="Contact & booking"
-        title="A simple way to get the right service started."
-        description="Share the appliance, symptom and service area. The booking flow prepares a structured WhatsApp message so the first conversation begins with useful context."
+        title="Book chimney or gas appliance repair in Bhopal."
+        description="Share the appliance, symptom and your area in Bhopal or MP Nagar. We prepare a structured WhatsApp message so the first conversation starts with useful context."
         image="/images/cta.webp"
       />
 

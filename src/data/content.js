@@ -85,7 +85,7 @@ export const faqs = Object.freeze([
   {
     question: 'Do you provide doorstep service?',
     answer:
-      'Yes. Appointments are designed around doorstep visits across the configured service area.',
+      'Yes. We offer doorstep chimney repair, kitchen chimney cleaning and gas stove repair in Bhopal. Our service covers MP Nagar and nearby areas in Madhya Pradesh.',
   },
   {
     question: 'Will I know the price before the repair starts?',

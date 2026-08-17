@@ -9,8 +9,9 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 export default function FaqPage() {
   useDocumentMeta({
-    title: 'FAQ',
-    description: 'Answers to common questions about gas appliance service, appointments and safety.',
+    title: 'FAQ — Chimney & Gas Repair in Bhopal',
+    description:
+      'Answers to common questions about chimney repair, gas stove repair and gas appliance service in Bhopal and MP Nagar.',
   });
 
   return (

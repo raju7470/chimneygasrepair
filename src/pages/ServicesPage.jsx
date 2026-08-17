@@ -9,16 +9,17 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 export default function ServicesPage() {
   useDocumentMeta({
-    title: 'Services',
-    description: 'Gas stove, hob, cooktop, burner, ignition and cooking range repair services.',
+    title: 'Chimney & Gas Repair Services in Bhopal',
+    description:
+      'Chimney repair, kitchen chimney cleaning, gas stove repair and gas appliance service in Bhopal, MP Nagar. Doorstep service available.',
   });
 
   return (
     <>
       <PageHero
-        eyebrow="Our services"
-        title="Focused care for the appliances you rely on every day."
-        description="From a weak burner flame to a full cooking-range service, each category follows the same diagnosis-first approach."
+        eyebrow="Chimney &amp; gas appliance services — Bhopal"
+        title="Chimney Repair, Chimney Cleaning &amp; Gas Appliance Services in Bhopal."
+        description="From kitchen chimney repair and gas stove repair to gas geyser repair — each service follows the same diagnosis-first approach across MP Nagar and Bhopal."
         image="/images/service-burner.webp"
       />
 
@@ -26,9 +27,9 @@ export default function ServicesPage() {
         <div className="container">
           <Reveal>
             <SectionHeading
-              eyebrow="Service menu"
+              eyebrow="Chimney repair, chimney service &amp; gas appliance repair"
               title="Choose the closest match to your appliance."
-              description="If you are unsure, select the nearest category while booking and describe the issue in your own words."
+              description="If you are searching for chimney service near me or gas stove repair near me in Bhopal, select the nearest category and describe the issue."
             />
           </Reveal>
           <div className="service-grid service-grid--detail">
@@ -36,7 +37,7 @@ export default function ServicesPage() {
               <Reveal key={service.title} delay={index * 55}>
                 <article className="service-card service-card--detail">
                   <div className="service-card__media">
-                    <img src={service.image} alt={`${service.title} appliance`} width="900" height="650" loading="lazy" />
+                    <img src={service.image} alt={service.altText} width="900" height="650" loading="lazy" />
                     <span>{service.tag}</span>
                   </div>
                   <div className="service-card__body">

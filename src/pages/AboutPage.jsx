@@ -9,16 +9,17 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 export default function AboutPage() {
   useDocumentMeta({
-    title: 'About',
-    description: 'Learn about the service philosophy behind FlameFix gas appliance care.',
+    title: 'About Our Bhopal Gas Repair Service',
+    description:
+      'Learn about our chimney and gas appliance repair service in Bhopal. Trusted chimney and gas repair in MP Nagar, Madhya Pradesh.',
   });
 
   return (
     <>
       <PageHero
-        eyebrow="About FlameFix"
-        title="A service experience designed around trust."
-        description="Clear communication, careful diagnosis and disciplined handover — presented with the polish a modern home-service brand deserves."
+        eyebrow="About our Bhopal repair service"
+        title="Trusted chimney &amp; gas repair service in Bhopal."
+        description="Clear communication, careful diagnosis and disciplined handover — providing reliable gas appliance repair across MP Nagar and Bhopal, Madhya Pradesh."
         image="/images/about.webp"
       />
 
@@ -42,7 +43,7 @@ export default function AboutPage() {
 
           <Reveal className="story-media" delay={100}>
             <div className="story-media__frame story-media__frame--landscape">
-              <img src="/images/service-hob.webp" alt="Modern gas hob" width="900" height="650" loading="lazy" />
+              <img src="/images/service-hob.webp" alt="Gas hob service in Bhopal" width="900" height="650" loading="lazy" />
             </div>
           </Reveal>
         </div>

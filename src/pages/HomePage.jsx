@@ -11,9 +11,9 @@ import { ServiceStandardCard } from '../components/ui/ServiceStandardCard';
 
 export default function HomePage() {
   useDocumentMeta({
-    title: 'Gas Stove & Hob Service',
+    title: 'Chimney & Gas Repair in Bhopal | MP Nagar Service',
     description:
-      'Premium doorstep service for gas stoves, built-in hobs, cooktops, burners and cooking ranges.',
+      'Expert chimney repair, kitchen chimney cleaning and gas stove repair in Bhopal. Doorstep gas appliance service in MP Nagar and nearby areas.',
   });
 
   return (
@@ -29,14 +29,13 @@ export default function HomePage() {
         <div className="container home-hero__grid">
           {/* eager=true: hero is above-fold — don't hide it until JS runs (prevents CLS) */}
           <Reveal className="home-hero__copy" eager>
-            <span className="eyebrow eyebrow--light">Doorstep gas appliance care</span>
+            <span className="eyebrow eyebrow--light">Doorstep chimney &amp; gas appliance care — Bhopal</span>
             <h1>
-              Precision repair.
-              <span>Beautifully simple service.</span>
+              Chimney &amp; Gas Repair Services in Bhopal.
+              <span>Precise. Local. Reliable.</span>
             </h1>
             <p>
-              Thoughtful diagnosis and repair for gas stoves, hobs, cooktops and burners — with a clear
-              service process from booking to handover.
+              Professional chimney repair, kitchen chimney cleaning and gas stove repair in Bhopal — with a clear service process from booking to handover. Serving MP Nagar and nearby areas.
             </p>
             <div className="hero-actions">
               <Link className="button button--primary" to="/contact">
@@ -82,9 +81,9 @@ export default function HomePage() {
         <div className="container">
           <Reveal>
             <SectionHeading
-              eyebrow="Specialist service"
-              title="Everything your gas appliance needs, without the clutter."
-              description="Focused service categories, a clear repair path and a premium customer experience from first contact to final check."
+              eyebrow="Chimney &amp; gas appliance services"
+              title="Chimney Repair &amp; Gas Appliance Services in Bhopal."
+              description="From kitchen chimney repair and chimney cleaning to gas stove and gas geyser repair — each service follows the same diagnosis-first approach across MP Nagar and Bhopal."
             />
           </Reveal>
 
@@ -95,7 +94,7 @@ export default function HomePage() {
                   <div className="service-card__media">
                     <img
                       src={service.image}
-                      alt={`${service.title} service`}
+                      alt={service.altText}
                       width="900"
                       height="650"
                       loading="lazy"
@@ -121,7 +120,7 @@ export default function HomePage() {
         <div className="container split-story">
           <Reveal className="story-media">
             <div className="story-media__frame">
-              <img src="/images/about.webp" alt="Gas burner being used in a modern kitchen" width="1100" height="900" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />
+              <img src="/images/about.webp" alt="Chimney and gas appliance repair technician in Bhopal" width="1100" height="900" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="story-media__badge">
               <span>Built around</span>
@@ -132,11 +131,9 @@ export default function HomePage() {
 
           <Reveal className="story-copy" delay={100}>
             <span className="eyebrow">A better service experience</span>
-            <h2>Repair should feel calm, transparent and carefully managed.</h2>
+            <h2>Chimney and gas repair Bhopal residents can trust.</h2>
             <p>
-              The website and service flow are designed around one idea: remove uncertainty. You know how to
-              book, what happens at inspection, when approval is needed and how the appliance is verified before
-              handover.
+              Our chimney and gas repair service in Bhopal is built around one idea: remove uncertainty. You know how to book, what happens at inspection, when approval is needed and how the appliance is verified before handover.
             </p>
             <div className="mini-checks">
               <span><Icon name="check" size={17} /> Diagnose before repair</span>
@@ -154,9 +151,9 @@ export default function HomePage() {
         <div className="container">
           <Reveal>
             <SectionHeading
-              eyebrow="Why FlameFix"
-              title="Premium means disciplined details."
-              description="Not decorative promises — a service model built around practical, repeatable standards."
+              eyebrow="Why choose us"
+              title="Why Bhopal chooses our chimney &amp; gas repair service."
+              description="Not decorative promises — a service model built around practical, repeatable standards for chimney and gas appliance repair in MP Nagar and Bhopal."
             />
           </Reveal>
 
@@ -195,6 +192,19 @@ export default function HomePage() {
               See how it works <Icon name="arrow" size={18} />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Service Areas — local SEO section */}
+      <section className="section">
+        <div className="container">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Service areas"
+              title="Chimney repair near me? We serve Bhopal."
+              description="Our chimney and gas repair service covers MP Nagar and the wider Bhopal area in Madhya Pradesh. If you are searching for chimney service near me or gas stove repair near me in Bhopal, book a doorstep visit today."
+            />
+          </Reveal>
         </div>
       </section>
 
