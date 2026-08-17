@@ -1,0 +1,36 @@
+# FlameFix Gas & Chimney Services
+
+FlameFix offers professional doorstep repair and maintenance for gas stoves, built-in hobs, cooktops, burners, cooking ranges, kitchen chimneys/range hoods, and selected commercial kitchen appliances. We serve your city and nearby areas with appointments available from 8:00 AM to 10:00 PM.
+
+## Pages
+
+- [Home](/) — Overview of gas and chimney services, booking form, and service process
+- [Services](/services) — Detailed service categories for gas stoves, hobs, cooktops, burners, cooking ranges, and kitchen chimneys
+- [About](/about) — Our approach, values, and service philosophy
+- [Why Us](/why-us) — Standards and differentiators that shape the service
+- [How It Works](/how-it-works) — Five-step repair process from booking to handover
+- [FAQ](/faq) — Common questions about gas appliance and kitchen chimney service
+- [Contact](/contact) — Book a visit, call, or connect on WhatsApp
+
+## Contact
+
+- Phone: +91 92013 39300
+- WhatsApp: +91 92013 39300
+- Email: service@yourbusiness.com
+- Service Area: Your City & Nearby Areas
+- Hours: 8:00 AM – 10:00 PM
+
+## Services
+
+- Gas stove repair (burners, ignition, valves, flame issues)
+- Built-in hob service
+- Gas cooktop repair
+- Cooking range service
+- Kitchen chimney repair and cleaning
+- Chimney suction, motor, airflow, filter, and noise service
+- Selected commercial kitchen appliance support
+- Safety and operational checks appropriate to the appliance
+
+## Booking
+
+Use the booking form on the homepage or contact page to submit an appliance issue. The form prepares a WhatsApp message with the appliance, area, and issue details. No payment is collected through the form; inspection charges are confirmed before the visit.
