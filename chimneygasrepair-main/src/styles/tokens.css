@@ -1,0 +1,33 @@
+:root {
+  --ink-950: #061521;
+  --ink-900: #091c2b;
+  --ink-800: #102a3f;
+  --ink-700: #244155;
+  --ink-600: #476071;
+  --ink-500: #667986;
+  --ink-300: #a9b5bd;
+  --paper: #ffffff;
+  --warm-50: #faf9f6;
+  --warm-100: #f4f1eb;
+  --warm-200: #ebe6dc;
+  --line: rgba(8, 28, 43, 0.12);
+  --line-dark: rgba(255, 255, 255, 0.12);
+  --accent: #f15d2a;
+  --accent-strong: #b9340d;
+  --accent-soft: #fff0ea;
+  --blue: #5dbaf7;
+  --blue-soft: #eaf6fe;
+  --success: #46d47a;
+  --whatsapp: #159e52;
+  --container: 1240px;
+  --header-height: 96px;
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 34px;
+  --shadow-sm: 0 10px 32px rgba(5, 21, 33, 0.07);
+  --shadow-md: 0 24px 70px rgba(5, 21, 33, 0.12);
+  --shadow-lg: 0 36px 110px rgba(5, 21, 33, 0.19);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --font-sans: Inter, 'Avenir Next', 'Segoe UI Variable', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Avenir Next', 'Segoe UI Variable Display', 'Segoe UI', Inter, sans-serif;
+}
